@@ -57,7 +57,7 @@
     "pg-hstore": "^2.3.2",
     "request": "^2.88.0",
     "s3rver": "^3.0.3",
-    "sequelize": "^5.11.0",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.4.0",
     "stripe": "^8.29.0",
     "ts-loader": "^5.3.3",
