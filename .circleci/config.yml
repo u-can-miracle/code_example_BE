@@ -1,0 +1,54 @@
+version: 2.1
+
+# for free plan
+jobs:
+  build:
+    docker:
+      - image: node:11.10.1
+    steps:
+      - checkout
+      - run:
+          name: Install packages
+          command: npm i
+      - run:
+          name: Lint js
+          command: npm run eslint
+      - run:
+          name: Lint ts
+          command: npm run tslint
+      - run:
+          name: Unit tests
+          command: npm test
+      # - run:
+      #     name: Apply migrations
+      #     command: npm run migrate:all
+
+# for paid plan
+  # build:
+  #   machine: true
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         command: docker network create appearence_network
+  #     - run:
+  #         name: Run docker
+  #         command: docker-compose up -d web
+  #     - run:
+  #         command: docker container ls
+  #     - run:
+  #         command: docker container start appearence_web
+  #     - run:
+  #         name: Install npm packages
+  #         command: docker exec -i -t appearence_web npm i
+  #     - run:
+  #         name: Lint js
+  #         command: docker-compose exec web npm run eslint
+  #     - run:
+  #         name: Lint ts
+  #         command: docker-compose exec web npm run tslint
+  #     - run:
+  #         name: Unit tests
+  #         command: docker-compose exec web npm test
+  #     - run:
+  #         name: Apply migrations
+  #         command: docker-compose exec web mpm run migrate:all

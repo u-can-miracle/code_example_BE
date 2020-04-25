@@ -1,0 +1,61 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "airbnb"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+  	"node": true,
+    "es6":   true
+  },
+  "plugins": [],
+  "globals": {
+    "describe": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "it": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "indent": ["error", 2],
+    "no-tabs": 0,
+    'no-plusplus': 'off',
+    "no-debugger": 2,
+    "no-console": 2,
+    "no-alert": 2,
+    "no-constant-condition": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "eqeqeq": 2,
+    "no-eval": 2,
+    "no-loop-func": 2,
+    "no-new-func": 2,
+    "no-new-wrappers": 2,
+    "no-with": 2,
+    "new-cap": 0,
+    "strict": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "no-case-declarations": 0,
+    "eol-last": 0,
+    "quotes": [2, "single"],
+    "object-curly-spacing": ["error", "always"],
+    # "object-curly-newline": ["error", "always"],
+    "jsx-quotes": [1, "prefer-single"],
+    "no-multi-spaces": 2,
+    "max-len": ["error", 100],
+    "semi": ["error", "never"],
+    "array-bracket-spacing": ["error", "never", { "objectsInArrays": false }],
+    "arrow-parens": ["error", "as-needed"],
+    "space-before-blocks": ["error", { "functions": "never", "keywords": "never", "classes": "always" }]
+  }
+}

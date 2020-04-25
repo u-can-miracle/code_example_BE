@@ -1,0 +1,62 @@
+{
+	"jsRules": false,
+  "extends": ["tslint:latest"],
+	"rulesDirectory": [
+		"node_modules/tslint-eslint-rules/dist/rules"
+	],
+	"linterOptions": {
+    "exclude": [
+      "src/**/*.js",
+			"migrations/**/*.js",
+			"tests/jest.config.js",
+			"node_modules/**",
+      "**/*.d.ts"
+    ]
+  },
+  "rules": {
+    "align": [false, "arguments", "elements", "members", "parameters", "statements"],
+		"one-variable-per-declaration": false,
+		"space-after-function-name": ["error", "never"],
+		"space-before-function-paren": ["error", "always"],
+		"quotes": ["error", "single"],
+		"no-constant-condition": true,
+		"no-consecutive-blank-lines": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "jsx-wrap-multiline": false,
+    "radix": false,
+    "semicolon": [true, "never"],
+    "trailing-comma": false,
+		"indent": [false, "spaces", 2],
+		"ordered-imports": false,
+		"arrow-parens": false,
+		"object-literal-sort-keys": false,
+		"no-implicit-dependencies": [true, "dev"],
+		"no-submodule-imno-unused-variableports": false,
+		"member-access": false,
+		"curly": false,
+		"one-line": [true, "check-catch", "check-finally", "check-else"],
+		"whitespace": [true, "check-module"],
+		"space-before-blocks": [true, "never"],
+		"prefer-conditional-expression": [false, "always"],
+		"prefer-for-of": [false, "always"],
+		"no-duplicate-imports": [false],
+		"eqeqeq": ["error", "always"],
+		"typedef-whitespace": [
+		  true,
+		  {
+		    "call-signature": "nospace",
+		    "index-signature": "nospace",
+		    "parameter": "nospace",
+		    "property-declaration": "nospace",
+		    "variable-declaration": "nospace"
+		  }
+		],
+		"no-unused-variable": true,
+		"no-unused-vars": ["error", {
+			"vars": "all", "args": "after-used", "ignoreRestSiblings": false
+		}],
+		"space-before-blocks": ["error", {
+			"functions": "never", "keywords": "never", "classes": "always"
+		}]
+  }
+}

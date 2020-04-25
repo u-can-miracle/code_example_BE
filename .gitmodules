@@ -1,0 +1,6 @@
+[submodule "Appearance_roles"]
+	path = Appearance_roles
+	url = git@github.com:u-can-miracle/Appearance_roles.git
+[submodule "Appearance_planes"]
+	path = Appearance_planes
+	url = git@github.com:u-can-miracle/Appearance_planes.git
