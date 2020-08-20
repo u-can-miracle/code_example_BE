@@ -39,7 +39,7 @@
     "amqp-connection-manager": "^3.0.0",
     "amqplib": "^0.5.3",
     "aws-sdk": "^2.453.0",
-    "bcrypt": "^3.0.5",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "bunyan": "^1.8.12",
     "cookie": "^0.4.0",
