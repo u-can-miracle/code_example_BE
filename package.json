@@ -38,7 +38,7 @@
     "accept-language-parser": "^1.5.0",
     "amqp-connection-manager": "^3.0.0",
     "amqplib": "^0.5.3",
-    "aws-sdk": "^2.453.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.5",
     "body-parser": "^1.18.3",
     "bunyan": "^1.8.12",
